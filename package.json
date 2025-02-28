@@ -9,9 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
   "dependencies": {
     "@chakra-ui/pin-input": "^2.1.0",
     "@headlessui/react": "^2.2.0",

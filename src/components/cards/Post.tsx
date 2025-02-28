@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Post, User } from "../../types";
+import { Post as PostType, User } from "../../types";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import { formatDate } from "../../lib/date";
 import { categorias } from "../../locales/data";
 
-export default function Post({ post, userID } : { post: Post, userID: User["id"] }) {
+export default function Post({ post, userID } : { post: PostType, userID: User["id"] }) {
     return (
         <div className="bg-slate-50 dark:bg-zinc-800 border-2 border-indigo-100 dark:border-zinc-800 shadow-lg shadow-indigo-50 dark:shadow-zinc-950 rounded-lg m-5 p-3 space-y-2">
             <p className="text-right text-sm text-slate-400 font-semibold">{categorias[post.category]}</p>

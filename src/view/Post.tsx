@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { getPostById, registerLikePost, registerViewPost } from "../api/PostAPI";
 import { categorias } from "../locales/data";
 import { formatDate } from "../lib/date";
-import { Post } from "../types";
+import { Post as PostType } from "../types";
 import { toast } from "react-toastify";
 import Modal from "../components/modal/Modal";
 import CreateEditPost from "../components/forms/CreateEditPost";
@@ -16,7 +16,7 @@ import { useAuthStore } from "../store";
 
 export default function Post() {
     const { user } = useAuthStore();
-    const [post, setPost] = useState<Post>();
+    const [post, setPost] = useState<PostType>();
     const [viewRegistered, setViewRegistered] = useState(false);
     const likePost = useMemo(() => Boolean(post?.likes.find(like => like.user.id === user?.id)),[post]);
     const postID = parseInt(useParams().id!);
@@ -64,7 +64,7 @@ export default function Post() {
         };
     });
 
-    const handleRegisterLike = async (postID: Post['id']) => {
+    const handleRegisterLike = async (postID: PostType['id']) => {
         const respuesta = await registerLikePost(postID);
         
         if( respuesta?.data.success ) {

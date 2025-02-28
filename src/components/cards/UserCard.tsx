@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { User } from "../../types";
-import { ArrowRightCircleIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 export default function UserCard({ user, userID } : { user: User, userID: User["id"] }) {
     const siguiendo = user.followers.some(usuario => usuario.id === userID);

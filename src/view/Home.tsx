@@ -37,7 +37,7 @@ export default function Home() {
                 <div className="flex items-center justify-center h-[70vh]">
                     <div className="flex flex-col w-96">
                         <img src="/buscar.png" className="size-40 m-auto" />
-                        <p className="text-center font-semibold">Busca posts sobre temas que te interesen; quizá coincidas con la perspectiva de otros usuarios.</p>
+                        <p className="text-center font-semibold">Busca posts sobre temas que te interesen; quizá coincidas con la perspectiva de otros usuarios. ¡Sigue a esos usuarios y mantente al tanto de sus publicaciones!</p>
                     </div>
                 </div>
             }

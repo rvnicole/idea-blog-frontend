@@ -3,7 +3,7 @@
 Frontend de **Idea Blog**, una aplicación de blog **fullstack** que permite a los usuarios registrarse, iniciar sesión y crear publicaciones organizadas por categorías.  
 Este repositorio corresponde a la **interfaz de usuario**, que consume la API del backend.
 
-🔗 Repositorio backend: https://github.com/rvnicole/idea-blog-backend
+🔗 Repositorio backend: https://github.com/rvnicole/idea-blog-frontend
 
 ---
 
@@ -37,6 +37,8 @@ https://idea-blog-frontend.vercel.app/
 ### 🚀 Instalación
 - npm install
 - npm run dev
+
+---
 
 ### 🔐 Environment Variables
 - VITE_API_URL

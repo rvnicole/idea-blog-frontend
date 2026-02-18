@@ -10,6 +10,11 @@ Este repositorio corresponde a la **interfaz de usuario**, que consume la API de
 ### 🌐 Demo
 https://idea-blog-frontend.vercel.app/
 
+![Demo](./public/auth.gif)
+![Demo](./public/Inicio.gif)
+![Demo](./public/post.gif)
+![Demo](./public/Perfil.gif)
+
 ---
 
 ### ✨ Características
